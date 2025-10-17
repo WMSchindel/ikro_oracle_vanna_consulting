@@ -1,0 +1,17 @@
+/oracle_streamlit_app/
+ ├── streamlit_app.py        ← frontend
+ ├── app_backend.py          ← backend (Vanna + Oracle)
+ ├── requirements.txt
+ ├── .env.example
+ └── chroma_db/              ← persistência vetorial (criada em runtime)
+
+
+
+streamlit
+pandas
+sqlalchemy
+oracledb
+openai
+vanna
+chromadb
+python-dotenv
