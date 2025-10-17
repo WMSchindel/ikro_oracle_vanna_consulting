@@ -1,0 +1,39 @@
+name: oracle_vanna_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - streamlit>=1.38.0
+      - pandas>=2.2.0
+      - sqlalchemy>=2.0.0
+      - oracledb>=2.1.0
+      - openai>=1.30.0
+      - vanna>=0.4.0
+      - chromadb>=0.5.3
+      - python-dotenv>=1.0.0
+
+| Campo          | Função                                                           |
+| -------------- | ---------------------------------------------------------------- |
+| `name`         | Nome do ambiente virtual (você pode mudar, ex: `ikro_vanna_env`) |
+| `channels`     | Fontes de pacotes (`conda-forge` traz versões atualizadas)       |
+| `dependencies` | Pacotes base do Python                                           |
+| `pip:`         | Pacotes que devem ser instalados via pip                         |
+
+💻 Como usar localmente
+
+1️⃣ Crie o ambiente:
+
+conda env create -f environment.yml
+
+
+2️⃣ Ative o ambiente:
+
+conda activate oracle_vanna_env
+
+
+3️⃣ Execute o app:
+
+streamlit run streamlit_app.py
